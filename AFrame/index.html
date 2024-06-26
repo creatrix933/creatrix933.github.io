@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+    </style>
+    
+    <script src="./aframe.min.js"></script>
+
+</head>
+<body>
+    
+<a-scene>
+
+    <a-assets>
+        <img id="sky" src="./texturesA/sky.jpg">
+        <a-asset-item id="heart" src="./texturesA/scene.gltf"></a-asset-item>
+        <!-- <a-asset-item id="ground-o" src="./texturesA/model.obj"></a-asset-item>
+        <a-asset-item id="ground-m" src="./texturesA/model.mtl"></a-asset-item> -->
+        <img id="ground" src="./texturesA/model.jpg">
+        <img id="img1" src="./texturesA/img.jpg">
+
+    </a-assets>
+
+      <a-sky src="#sky" animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 1000000"></a-sky>
+
+      <a-entity gltf-model="#heart" position="-100 150 0" scale="100 100 100" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 100000"></a-entity>
+      <a-box src="#ground" width="1000" depth="1000" position="0 -10 0"></a-box>
+
+      <!-- Take pa kreisi -->
+      <a-image src="#img1" height="50" width="20" position="-100 0 100" rotation=" 0 0"></a-image>
+      <a-image src="#img1" height="50" width="20" position="-100 0 100" rotation=" 0 0"></a-image>
+
+<!-- Take pa labi -->
+      <a-image src="#img1" height="50" width="20" position="-100 0 -100" rotation=" 0 0"></a-image>
+      <a-image src="#img1" height="50" width="20" position="-100 0 -100" rotation=" 0 0"></a-image>
+
+    <!-- Take taisni -->
+      <a-image src="#img1" height="50" width="20" position="-200 0 0" rotation=" 0 90"></a-image>
+      <a-image src="#img1" height="50" width="20" position="-200 0 0" rotation=" 0 90"></a-image>
+
+</a-scene>
+
+</body>
+</html>
