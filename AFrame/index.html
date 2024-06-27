@@ -23,26 +23,44 @@
         <!-- <a-asset-item id="ground-o" src="./texturesA/model.obj"></a-asset-item>
         <a-asset-item id="ground-m" src="./texturesA/model.mtl"></a-asset-item> -->
         <img id="ground" src="./texturesA/model.jpg">
-        <img id="img1" src="./texturesA/img.jpg">
+        <a-asset-item id="tree" src="./tree/scene.gltf"></a-asset-item>
+
+        <img id="img1" src="./images/1.jpeg">
+        <img id="img2" src="./images/2.jpeg">
+        <img id="img3" src="./images/3.jpeg">
+        <img id="img4" src="./images/4.jpeg">
+        <img id="img5" src="./images/5.jpeg">
+        <img id="img6" src="./images/6.jpeg">
 
     </a-assets>
 
       <a-sky src="#sky" animation="property: rotation; to: 0 -360 0; easing: linear; loop: true; dur: 1000000"></a-sky>
 
       <a-entity gltf-model="#heart" position="-100 150 0" scale="100 100 100" animation="property: rotation; to: 0 360 0; easing: linear; loop: true; dur: 100000"></a-entity>
+      <a-entity gltf-model="#tree" position="-122 -8.5 32" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-60 -8.5 80" scale="0.1 0.16 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="20 -8.5 -50" scale="0.1 0.15 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-10 -8.5 20" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-160 -8.5 -80" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-70 -8.5 -50" scale="0.1 0.12 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-80 -8.5 -20" scale="0.1 0.1 0.1"></a-entity>
+      <a-entity gltf-model="#tree" position="-200 -8.5 100" scale="0.1 0.15 0.1"></a-entity>
       <a-box src="#ground" width="1000" depth="1000" position="0 -10 0"></a-box>
 
+<a-entity scale="5 5 5">
+
       <!-- Take pa kreisi -->
-      <a-image src="#img1" height="50" width="20" position="-100 0 100" rotation=" 0 0"></a-image>
-      <a-image src="#img1" height="50" width="20" position="-100 0 100" rotation=" 0 0"></a-image>
+      <a-image src="#img1" height="4" width="3" position="-40 0 20" rotation=" 0 0"></a-image>
+      <a-image src="#img2" height="4" width="3" position="-30 0 20" rotation=" 0 0"></a-image>
 
 <!-- Take pa labi -->
-      <a-image src="#img1" height="50" width="20" position="-100 0 -100" rotation=" 0 0"></a-image>
-      <a-image src="#img1" height="50" width="20" position="-100 0 -100" rotation=" 0 0"></a-image>
+      <a-image src="#img3" height="4" width="3" position="-40 0 -20" rotation=" 0 0"></a-image>
+      <a-image src="#img4" height="4" width="3" position="-30 0 -20" rotation=" 0 0"></a-image>
 
     <!-- Take taisni -->
-      <a-image src="#img1" height="50" width="20" position="-200 0 0" rotation=" 0 90"></a-image>
-      <a-image src="#img1" height="50" width="20" position="-200 0 0" rotation=" 0 90"></a-image>
+      <a-image src="#img5" height="4" width="3" position="-60 0 2.5" rotation=" 0 90"></a-image>
+      <a-image src="#img6" height="3" width="3" position="-60 0 -2.5" rotation=" 0 90"></a-image>
+    </a-entity>
 
 </a-scene>
 
